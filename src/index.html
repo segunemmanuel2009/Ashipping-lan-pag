@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shipping Website" />
+    <meta name="keywords" content="Shipping, Websites, segun" />
+    <meta name="author" content="segun" />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="./assets/favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="ic"
+      type="image/p"
+      sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <!-- FONTS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME ICON  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <!-- SWIPER LINK  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- STYLES LINKS -->
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Shipping | Home</title>
+  </head>
+  <body id="body" class="font-Inter bg-tx-body">
+    <header class="w-full flex flex-col gap-5 items-center justify-between">
+      <nav
+        id="navBar"
+        class="w-full bg-white h-[10vh] z-20 flex items-center justify-center fixed top-0 left-0"
+      >
+        <div
+          class="container w-full relative flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <div class="w-full flex justify-between items-center lg:w-[unset]">
+            <div id="hambugger" class="lg:hidden">
+              <button
+                id="hambuggerOpenIcon"
+                class="flex bg-transparent outline-transparent border-transparent"
+                type="button"
+              >
+                <i class="fa-solid fa-bars text-[1.8rem] text-tx-dark"></i>
+              </button>
+
+              <button
+                id="hambuggerCloseIcon"
+                class="hidden bg-transparent outline-transparent border-transparent"
+                type="button"
+              >
+                <i class="fa-solid fa-xmark text-[1.8rem] text-tx-dark"></i>
+              </button>
+            </div>
+            <a class="flex" href="/src/index.html">
+              <img
+                class="w-28 flex"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </a>
+          </div>
+
+          <!-- Navigations -->
+          <ul
+            id="nav__links"
+            class="w-full h-[90vh] absolute top-[6vh] right-full flex flex-col items-center justify-center gap-12 pb-12 transition-all duration-300 ease-in lg:w-[unset] lg:relative lg:right-[unset] lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-10 lg:top-[2.5vh]"
+          >
+            <li class="">
+              <a
+                class="text-[0.8rem] hover:text-tx-green transition-all duration-300 ease-in active:text-tx-green"
+                href="#"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[0.8rem] hover:text-tx-green transition-all duration-300 ease-in"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[0.8rem] hover:text-tx-green transition-all duration-300 ease-in"
+                href="#"
+                >Contact</a
+              >
+            </li>
+
+            <a href="https://www.chelsea.com" id="nav__button" class="lg:ml-72">
+              <button
+                class="text-white text-[0.8rem] bg-tx-dark hover:bg-white hover:text-tx-dark py-3 px-8 border border-solid border-black rounded transition-all duration-500 ease-in-out"
+                type="button"
+              >
+                Start Shipping
+              </button>
+            </a>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="w-full h-auto pt-16">
+        <div
+          class="container mt-14 w-full flex flex-col items-center justify-between gap-12 lg:flex-row"
+        >
+          <article class="flex flex-col justify-center">
+            <div class="relative">
+              <h1
+                class="text-[1.8rem] md:text-[2rem] md:font-light lg:text-[2.5rem] lg:w-[17ch] lg:font-normal font-Agrandir text-tx-dark mb-2 text-center lg:text-start relative -z-50"
+              >
+                Want to
+                <span class=""> ship stuff?</span>
+              </h1>
+              <img
+                class="hidden lg:flex object-cover object-center w-[15rem] absolute top-[-15%] left-[32%] -z-50"
+                src="./assets/images/vector-3.png"
+                alt="hero"
+              />
+            </div>
+            <p
+              class="text-[0.84rem] text-tx-ash-100 text-center lg:text-start w-[35ch] md:w-[48ch] lg:pt-[1.8rem] lg:text-[1rem]"
+            >
+              From little boxes of happiness, imports to feed mouths and exports
+              that grow global economies, we are here for all of it.
+            </p>
+            <div class="flex justify-center items-center lg:justify-start">
+              <a href="#">
+                <button
+                  class="text-black text-[1rem] bg-tx-green hover:bg-black hover:text-tx-green py-2 px-8 border border-solid border-tx-green shadow-lg shadow-[(#0000000a)] rounded-md mt-9 transition-all duration-1000 ease-in-out md:py-3 md:px-10 lg:py-3 lg:px-10"
+                >
+                  Start Shipping
+                </button>
+              </a>
+            </div>
+          </article>
+          <div class="flex flex-col gap-2 md:flex-row">
+            <div class="flex justify-center gap-2 md:flex-col">
+              <img
+                class="h-[13.9rem] w-[10.8rem] flex object-cover object-center md:order-last md:h-[23.37rem] md:w-[19.68rem]"
+                src="./assets/images/Frame-2.png"
+                alt="hero"
+              />
+              <img
+                class="h-[13.9rem] w-[8.1rem] flex object-cover object-center md:order-first md:h-[12.75rem] md:w-[19.68rem]"
+                src="./assets/images/GetPaidStock.png"
+                alt="hero"
+              />
+            </div>
+            <div class="flex justify-center">
+              <img
+                class="h-[11.5rem] w-full flex object-cover object-center md:hidden"
+                src="./assets/images/frame-3-small.png"
+                alt="hero"
+              />
+              <img
+                class="h-[36.6rem] w-full object-cover object-center hidden md:flex"
+                src="./assets/images/Frame-3.png"
+                alt="hero"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="">
+      <section class="w-full bg-tx-ash-200 my-6">
+        <div class="container">
+          <div class="flex justify-between items-center py-5">
+            <h1
+              class="text-[1.5rem] md:text-[2rem] w-[10ch] font-light lg:text-[2.5rem] font-Agrandir text-tx-dark md:w-[unset] lg:py-3"
+            >
+              We offer a variety of Services
+            </h1>
+            <a href="#">
+              <img
+                class="lg:hidden"
+                src="./assets/images/services-icon.svg"
+                alt="arrow Icon"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full">
+        <div class="container">
+          <div class="swiper1 overflow-x-hidden">
+            <div class="swiper-wrapper md:gap-4">
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-start items-start">
+                  <img
+                    class="w-[29.125rem] h-[15rem] object-cover rounded-t-lg"
+                    src="./assets/images/services-1.png"
+                    alt="activities1"
+                  />
+
+                  <div class="p-5 bg-white rounded-b-lg">
+                    <h5 class="font-normal font-Agrandir text-tx-dark py-1">
+                      Sea freight
+                    </h5>
+                    <p class="text-[0.6rem] font-extralight">
+                      transportation of goods or cargo by sea using ships or
+                      vessels. It is one of the most common and cost-effective
+                      methods of transporting large volumes of goods
+                      internationally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-start items-start">
+                  <img
+                    class="w-[29.125rem] h-[15rem] object-cover rounded-t-lg"
+                    src="./assets/images/services-2.png"
+                    alt="activities1"
+                  />
+
+                  <div class="p-5 bg-white rounded-b-lg">
+                    <h5 class="font-normal font-Agrandir text-tx-dark py-1">
+                      Air freight
+                    </h5>
+                    <p class="text-[0.6rem] font-extralight">
+                      transportation of goods or cargo by sea using ships or
+                      vessels. It is one of the most common and cost-effective
+                      methods of transporting large volumes of goods
+                      internationally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-start items-start">
+                  <img
+                    class="w-[29.125rem] h-[15rem] object-cover rounded-t-lg"
+                    src="./assets/images/services-3.png"
+                    alt="activities1"
+                  />
+
+                  <div class="p-5 bg-white rounded-b-lg">
+                    <h5 class="font-normal font-Agrandir text-tx-dark py-1">
+                      Land transportation
+                    </h5>
+                    <p class="text-[0.6rem] font-extralight">
+                      transportation of goods or cargo by sea using ships or
+                      vessels. It is one of the most common and cost-effective
+                      methods of transporting large volumes of goods
+                      internationally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-start items-start">
+                  <img
+                    class="w-[29.125rem] h-[15rem] object-cover rounded-t-lg"
+                    src="./assets/images/services-2.png"
+                    alt="activities1"
+                  />
+
+                  <div class="p-5 bg-white rounded-b-lg">
+                    <h5 class="font-normal font-Agrandir text-tx-dark py-1">
+                      Air freight
+                    </h5>
+                    <p class="text-[0.6rem] font-extralight">
+                      transportation of goods or cargo by sea using ships or
+                      vessels. It is one of the most common and cost-effective
+                      methods of transporting large volumes of goods
+                      internationally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-start items-start">
+                  <img
+                    class="w-[29.125rem] h-[15rem] object-cover rounded-t-lg"
+                    src="./assets/images/services-1.png"
+                    alt="activities1"
+                  />
+
+                  <div class="p-5 bg-white rounded-b-lg">
+                    <h5 class="font-normal font-Agrandir text-tx-dark py-1">
+                      Sea freight
+                    </h5>
+                    <p class="text-[0.6rem] font-extralight">
+                      transportation of goods or cargo by sea using ships or
+                      vessels. It is one of the most common and cost-effective
+                      methods of transporting large volumes of goods
+                      internationally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-start items-start">
+                  <img
+                    class="w-[29.125rem] h-[15rem] object-cover rounded-t-lg"
+                    src="./assets/images/services-3.png"
+                    alt="activities1"
+                  />
+
+                  <div class="p-5 bg-white rounded-b-lg">
+                    <h5 class="font-normal font-Agrandir text-tx-dark py-1">
+                      Land transportation
+                    </h5>
+                    <p class="text-[0.6rem] font-extralight">
+                      transportation of goods or cargo by sea using ships or
+                      vessels. It is one of the most common and cost-effective
+                      methods of transporting large volumes of goods
+                      internationally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden justify-between items-center lg:flex">
+              <div class="flex justify-center items-center lg:justify-start">
+                <a href="#">
+                  <button
+                    class="text-tx-green text-[0.8rem] bg-black hover:bg-tx-green hover:text-black py-2 px-8 border border-solid border-tx-green shadow-lg shadow-[(#0000000a)] rounded-md mt-9 transition-all duration-1000 ease-in-out md:py-3 md:px-10 lg:py-3 lg:px-10"
+                  >
+                    Start Shipping
+                  </button>
+                </a>
+              </div>
+
+              <div class="flex mt-10 mr-20 gap-10">
+                <button class="slidePrev-btn">
+                  <i
+                    class="fa-solid fa-chevron-left text-[2rem] text-tx-green hover:text-white transition-all duration-300 ease-in"
+                  ></i>
+                </button>
+                <button class="slideNext-btn">
+                  <i
+                    class="fa-solid fa-chevron-right text-[2rem] text-tx-green hover:text-white transition-all duration-300 ease-in"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-tx-dark mt-16">
+        <div class="container">
+          <div
+            class="flex flex-col py-6 lg:py-10 gap-10 lg:gap-16 justify-center items-center"
+          >
+            <h3
+              class="text-[1.5rem] text-end md:text-center md:w-[30ch] lg:w-[35ch] font-light font-Agrandir text-tx-green"
+            >
+              Shop from your favorite e-commerce platforms & ship to Nigeria
+              conveniently
+            </h3>
+
+            <div class="grid grid-cols-3 gap-5 md:flex mb-3 mt-[-1rem]">
+              <img
+                class=""
+                src="./assets/images/platform-1.png"
+                alt="platform-1"
+              />
+              <img
+                class=""
+                src="./assets/images/platform-2.png"
+                alt="platform-2"
+              />
+              <img
+                class=""
+                src="./assets/images/platform-3.png"
+                alt="platform-3"
+              />
+              <img
+                class=""
+                src="./assets/images/platform-4.png"
+                alt="platform-4"
+              />
+              <img
+                class=""
+                src="./assets/images/platform-5.png"
+                alt="platform-5"
+              />
+              <img
+                class=""
+                src="./assets/images/platform-6.png"
+                alt="platform-6"
+              />
+              <img
+                class="col-start-2 col-end-2"
+                src="./assets/images/platform-7.png"
+                alt="platform-7"
+              />
+            </div>
+
+            <div class="relative justify-center items-center">
+              <h4
+                class="text-[1rem] font-light w-[15ch] font-Agrandir text-white mb-2 text-center"
+              >
+                See how it works below
+              </h4>
+              <img
+                class="object-cover object-center w-[15rem] absolute top-[-40%] left-[0%]"
+                src="./assets/images/vector-2.png"
+                alt="hero"
+              />
+            </div>
+
+            <div
+              class="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-2"
+            >
+              <div
+                class="bg-white px-10 py-3 rounded-lg flex justify-center items-start gap-4 h-[9.625rem] w-[18.5rem] md:w-full md:h-[unset] md:p-10"
+              >
+                <img
+                  src="./assets/images/icon-address.png"
+                  alt="icon-address"
+                />
+                <div class="">
+                  <h3
+                    class="text-[1rem] font-Agrandir text-black font-normal mb-2"
+                  >
+                    Use Afrishipping address
+                  </h3>
+                  <p
+                    class="text-[0.8rem] text-tx-ash-100 w-[25ch] md:w-[unset] font-Agrandir"
+                  >
+                    Get your valid US address when you sign up with Afrishipping
+                    use it as your delivery address at checkout or have your
+                    packages sent there by loved ones
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-white px-10 py-3 rounded-lg flex justify-center items-start gap-4 h-[9.625rem] w-[18.5rem] pt-6 md:w-full md:h-[unset] md:p-10 md:pr-[5rem]"
+              >
+                <img src="./assets/images/icon-track.png" alt="icon-address" />
+                <div class="">
+                  <h3
+                    class="text-[1rem] font-Agrandir text-black font-normal mb-2"
+                  >
+                    Track your shipments
+                  </h3>
+                  <p
+                    class="text-[0.8rem] text-tx-ash-100 w-[25ch] md:w-[unset] pt-4 font-Agrandir"
+                  >
+                    Track your shipment from the US till it arrives in Nigeria
+                    on your mobile phone or the web
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-white px-10 py-3 rounded-lg flex justify-center items-start gap-4 h-[9.625rem] w-[18.5rem] md:w-full md:h-[unset] md:p-10 lg:col-start-1 lg:col-end-2 lg:ml-[20rem]"
+              >
+                <img src="./assets/images/icon-hand.png" alt="icon-address" />
+                <div class="">
+                  <h3
+                    class="text-[1rem] font-Agrandir text-black font-normal mb-2"
+                  >
+                    We deliver anywhere you choose
+                  </h3>
+                  <p
+                    class="text-[0.8rem] text-tx-ash-100 w-[25ch] md:w-[unset] font-Agrandir"
+                  >
+                    Pay to have your shipments delivered anywhere in Nigeria or
+                    pick them up for free in our Lagos office
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full mt-8">
+        <div class="container">
+          <div class="md:flex md:justify-between md:items-center">
+            <div class="flex flex-col">
+              <h1
+                class="text-[1.3rem] md:text-[2rem] w-[10ch] font-normal lg:text-[3rem] font-Agrandir text-tx-dark lg:py-3"
+              >
+                Shipping cost calculator
+              </h1>
+              <p
+                class="text-[0.8rem] font-light pt-2 md:w-[22ch] lg:w-[35ch] lg:text-[1rem]"
+              >
+                There are no hidden charges on Afrishipping, enter the weight of
+                your shipment to get an estimated shipping cost.
+              </p>
+              <p class="text-[0.8rem] font-light pt-2 lg:text-[1rem]">
+                Need more information? Go to pricing
+              </p>
+            </div>
+            <div
+              class="w-full md:max-w-[50%] bg-white py-5 px-10 md:py-10 md:px-16 lg:py-24 rounded-lg mt-6"
+            >
+              <form action="" class="">
+                <select
+                  class="w-full block rounded-lg p-[0.9rem] text-tx-dark text-[0.8rem] bg-white border border-tx-dark outline-none"
+                >
+                  <option selected>Choose a country</option>
+                  <option value="US">Nigeria</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="input weight"
+                    class="block rounded-lg text-center mt-1 p-[0.9rem] text-tx-dark text-[0.8rem] border border-none border-b-[0.05] border-tx-dark outline-none w-[12rem]"
+                  />
+                  <div
+                    class="flex justify-between items-center border-t-[0.06rem] leading-[3rem] border-tx-green"
+                  >
+                    <p class="text-[0.8rem] font-light">Shipping rate</p>
+                    <p class="text-[0.8rem] font-light">8</p>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Lagos pickup"
+                  class="w-full block rounded-lg mt-1 p-[0.9rem] text-tx-dark text-[0.8rem] border border-tx-dark outline-none"
+                />
+                <label
+                  for="total"
+                  class="block text-center pt-[1rem] text-[0.8rem] font-light"
+                  >Total to pay
+                  <input
+                    type="number"
+                    placeholder="0"
+                    class="w-full block rounded-lg p-[0.9rem] bg-[#EEEEEE] mt-1 text-tx-dark border border-tx-dark outline-none"
+                  />
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full mt-8 lg:mt-16">
+        <div
+          class="flex flex-col justify-center gap-5 md:flex md:flex-row md:gap-0"
+        >
+          <div class="w-full md:order-las">
+            <img
+              class=""
+              src="./assets/images/payment-display.png"
+              alt="payment display"
+            />
+          </div>
+          <div class="w-full">
+            <div class="container">
+              <div class="flex flex-col lg:justify-center lg:pt-[3.5rem]">
+                <h1
+                  class="text-[1.3rem] md:text-[2rem] w-[10ch] font-normal lg:text-[2.5rem] font-Agrandir text-tx-dark lg:py-3"
+                >
+                  Payment
+                </h1>
+
+                <p class="text-[0.8rem] font-light pt-2 w-[25ch]">
+                  Offer flexible payment options in both Naira and Dollars
+                </p>
+
+                <a href="#">
+                  <button
+                    class="text-tx-green text-[0.8rem] bg-black hover:bg-tx-green hover:text-black py-2 px-8 border border-solid border-tx-green shadow-lg shadow-[(#0000000a)] rounded-md mt-5 transition-all duration-1000 ease-in-out md:py-3 md:px-10 lg:py-3 lg:px-10"
+                  >
+                    Learn more
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full mt-8">
+        <div class="container">
+          <div>
+            <div>
+              <h1
+                class="text-[1.3rem] md:text-[2rem] w-[10ch] lg:w-[unset] font-normal lg:text-[2.5rem] font-Agrandir text-tx-dark lg:py-3"
+              >
+                What they say about us
+              </h1>
+            </div>
+
+            <div class="w-full relative rounded-lg mt-5">
+              <div class="swiper2 overflow-x-hidden">
+                <div class="swiper-wrapper md:gap-4">
+                  <div class="swiper-slide">
+                    <figure
+                      class="flex flex-col justify-start items-start bg-white border border-solid rounded p-5 md:p-10 lg:p-20"
+                    >
+                      <div
+                        class="flex justify-center items-center gap-[0.2rem]"
+                      >
+                        <i
+                          class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                        ></i>
+
+                        <h5 class="text-[0.8rem] font-medium">Trustpilot</h5>
+
+                        <a
+                          href=""
+                          class="w-full flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                        </a>
+                      </div>
+
+                      <figcaption class="">
+                        <p class="text-[0.8rem] font-light py-5">
+                          “Any company can ship products but Afrishipping made
+                          sure my items were complete and well packaged. None of
+                          my products were broken. You can tell by how their
+                          customer care representatives talk, that they put
+                          their customers first”
+                        </p>
+                        <div>
+                          <div
+                            class="flex justify-start items-end gap-3 pb-[2rem]"
+                          >
+                            <img
+                              class="size-12"
+                              src="./assets/images/avater-1.png"
+                              alt="Customer-1"
+                            />
+                            <div>
+                              <h5 class="text-[0.8rem]">Fareedah Mustapha</h5>
+                              <p class="text-[0.7rem]">Entrepreneur</p>
+                            </div>
+                          </div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <figure
+                      class="flex flex-col justify-start items-start bg-white border border-solid rounded p-5 md:p-10 lg:p-20"
+                    >
+                      <div
+                        class="flex justify-center items-center gap-[0.2rem]"
+                      >
+                        <i
+                          class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                        ></i>
+
+                        <h5 class="text-[0.8rem] font-medium">Trustpilot</h5>
+
+                        <a
+                          href=""
+                          class="w-full flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                        </a>
+                      </div>
+
+                      <figcaption class="">
+                        <p class="text-[0.8rem] font-light py-5">
+                          “Any company can ship products but Afrishipping made
+                          sure my items were complete and well packaged. None of
+                          my products were broken. You can tell by how their
+                          customer care representatives talk, that they put
+                          their customers first”
+                        </p>
+                        <div>
+                          <div
+                            class="flex justify-start items-end gap-3 pb-[2rem]"
+                          >
+                            <img
+                              class="size-12"
+                              src="./assets/images/avater-1.png"
+                              alt="Customer-1"
+                            />
+                            <div>
+                              <h5 class="text-[0.8rem]">Fareedah Mustapha</h5>
+                              <p class="text-[0.7rem]">Entrepreneur</p>
+                            </div>
+                          </div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <figure
+                      class="flex flex-col justify-start items-start bg-white border border-solid rounded p-5 md:p-10 lg:p-20"
+                    >
+                      <div
+                        class="flex justify-center items-center gap-[0.2rem]"
+                      >
+                        <i
+                          class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                        ></i>
+
+                        <h5 class="text-[0.8rem] font-medium">Trustpilot</h5>
+
+                        <a
+                          href=""
+                          class="w-full flex justify-center items-center"
+                        >
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star text-[0.8rem] text-[#006B6A]"
+                          ></i>
+                        </a>
+                      </div>
+
+                      <figcaption class="">
+                        <p class="text-[0.8rem] font-light py-5">
+                          “Any company can ship products but Afrishipping made
+                          sure my items were complete and well packaged. None of
+                          my products were broken. You can tell by how their
+                          customer care representatives talk, that they put
+                          their customers first”
+                        </p>
+                        <div>
+                          <div
+                            class="flex justify-start items-end gap-3 pb-[2rem]"
+                          >
+                            <img
+                              class="size-12"
+                              src="./assets/images/avater-1.png"
+                              alt="Customer-1"
+                            />
+                            <div>
+                              <h5 class="text-[0.8rem]">Fareedah Mustapha</h5>
+                              <p class="text-[0.7rem]">Entrepreneur</p>
+                            </div>
+                          </div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="flex justify-end text-[0.8rem] pt-4 font-light">
+              <a href="#">
+                Read more
+                <span class="text-tx-green border-b-[0.05rem] border-tx-green"
+                  >reviews</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-tx-dark mt-10">
+        <div class="container">
+          <div class="py-[3rem] lg:pb-[8rem]">
+            <div class="pb-5">
+              <h1
+                class="text-[1.3rem] w-[10ch] lg:w-[unset] font-normal lg:text-[2.5rem] font-Agrandir text-white lg:py-3 leading-[1.5rem]"
+              >
+                Frequently asked questions
+              </h1>
+            </div>
+
+            <div>
+              <a
+                href="#"
+                class="flex justify-between items-center border-b-[0.06rem] border-white leading-[2.5rem] font-Agrandir text-white hover:text-tx-green transition-all duration-300 ease-in"
+              >
+                <p class="">What are your shipping costs?</p>
+
+                <i class="fa-solid fa-chevron-down text-[1.3rem]"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between items-center border-b-[0.06rem] border-white leading-[2.5rem] font-Agrandir text-white hover:text-tx-green transition-all duration-300 ease-in"
+              >
+                <p class="">What are your shipping costs?</p>
+
+                <i class="fa-solid fa-chevron-down text-[1.3rem]"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between items-center border-b-[0.06rem] border-white leading-[2.5rem] font-Agrandir text-white hover:text-tx-green transition-all duration-300 ease-in"
+              >
+                <p class="">What are your shipping costs?</p>
+
+                <i class="fa-solid fa-chevron-down text-[1.3rem]"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between items-center border-b-[0.06rem] border-white leading-[2.5rem] font-Agrandir text-white hover:text-tx-green transition-all duration-300 ease-in"
+              >
+                <p class="">What are your shipping costs?</p>
+
+                <i class="fa-solid fa-chevron-down text-[1.3rem]"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between items-center border-b-[0.06rem] border-white leading-[2.5rem] font-Agrandir text-white hover:text-tx-green transition-all duration-300 ease-in"
+              >
+                <p class="">What are your shipping costs?</p>
+
+                <i class="fa-solid fa-chevron-down text-[1.3rem]"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between items-center border-b-[0.06rem] border-tx-green leading-[2.5rem] font-Agrandir text-tx-green hover:text-tx-green transition-all duration-300 ease-in"
+              >
+                <p class="">What are your shipping costs?</p>
+
+                <i class="fa-solid fa-chevron-up text-[1.3rem]"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full">
+        <div class="w-full object-cover object-center">
+          <img
+            class="md:hidden"
+            src="./assets/images/FrameC.png"
+            alt="FrameC"
+          />
+          <img
+            class="hidden md:flex"
+            src="./assets/images/FrameB.png"
+            alt="FrameB"
+          />
+        </div>
+        <div class="container py-[2rem]">
+          <div class="relative justify-center items-center">
+            <h1
+              class="text-[1.5rem] w-[12.5ch] lg:text-[2rem] lg:w-[unset] font-Agrandir text-tx-dark"
+            >
+              You definitely want to ship stuff
+            </h1>
+            <img
+              class="object-cover object-center w-[8rem] lg:w-[12rem] absolute top-[45%] left-[28%] md:left-[13%] lg:top-[-15%] lg:left-[27%]"
+              src="./assets/images/vector-3.png"
+              alt="hero"
+            />
+          </div>
+          <a href="#">
+            <button
+              class="text-tx-green text-[0.8rem] bg-black hover:bg-tx-green hover:text-black py-2 px-8 border border-solid border-tx-green shadow-lg shadow-[(#0000000a)] rounded-md mt-5 transition-all duration-1000 ease-in-out md:py-3 md:px-10 lg:py-3 lg:px-10"
+            >
+              Start Shipping
+            </button>
+          </a>
+        </div>
+
+        <!-- <h1
+              class="text-[1.8rem] md:text-[2rem] md:font-light lg:text-[2.5rem] lg:w-[17ch] lg:font-normal font-Agrandir text-tx-dark mb-2 text-center lg:text-start relative -z-50"
+            >
+              Want to
+              <span class=""> ship stuff?</span>
+            </h1> -->
+      </section>
+    </main>
+
+    <footer id="footer" class="">
+      <section class="w-full bg-tx-dark mt-5">
+        <div class="container">
+          <div class="flex flex-col gap-7 pt-10 lg:flex-row">
+            <div class="lg:pr-[4rem]">
+              <img src="./assets/images/logoB.png" alt="LogoB" class="" />
+              <p class="text-[0.8rem] font-light pt-3 w-[35ch] text-white">
+                GoShippr allows you send and receive items from your doorstep to
+                anywhere in the world
+              </p>
+            </div>
+            <div class="md:flex md:gap-[10rem] lg:gap-[5rem]">
+              <form action="">
+                <h1
+                  class="text-[0.9rem] pb-3 font-Agrandir font-light text-white"
+                >
+                  Stay up to date
+                </h1>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="block rounded-lg p-[0.9rem] text-white text-[0.8rem] bg-tx-dark border border-white outline-none w-[12rem]"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  class="rounded-lg mt-3 p-[0.9rem] text-white text-[0.8rem] bg-tx-dark border border-white outline-none w-[12rem]"
+                />
+                <div class="pb-[1rem]">
+                  <a href="#">
+                    <button
+                      class="text-black text-[0.9rem] bg-tx-green hover:bg-black hover:text-tx-green py-3 px-[3.8rem] border border-solid border-tx-green shadow-lg shadow-[(#0000000a)] rounded-md mt-4 transition-all duration-1000 ease-in-out"
+                    >
+                      Subscribe
+                    </button>
+                  </a>
+                </div>
+              </form>
+
+              <div class="flex gap-[4rem] lg:gap-[4.5rem]">
+                <div class="text-white">
+                  <h1 class="text-[0.9rem] pb-2 font-Agrandir font-light">
+                    Follow us
+                  </h1>
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >Instagram</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >Twitter</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >Facebook</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >Youtube</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >Linkedin</a
+                  >
+                </div>
+
+                <div class="text-white">
+                  <h1 class="text-[0.9rem] pb-2 font-Agrandir font-light">
+                    Contact
+                  </h1>
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >+2348070947394</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >+234 9044340341</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >mail@goshippr.com</a
+                  >
+                  <a
+                    href="#"
+                    class="block text-[0.8rem] font-extralight pt-[0.1rem]"
+                    >www.goshippr.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex md:ml-[22rem] gap-[2.7rem] md:gap-[2rem] pb-2 lg:ml-[2rem] lg:gap-10"
+            >
+              <div>
+                <h1 class="text-[0.8rem] font-Agrandir font-light text-white">
+                  Privacy Policy
+                </h1>
+              </div>
+
+              <div>
+                <h1 class="text-[0.8rem] font-Agrandir font-light text-white">
+                  Terms of service
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-tx-dark">
+        <div class="lg:container">
+          <div
+            class="border-b-[0.06rem] border-tx-green leading-[2.5rem] lg:pt-7"
+          ></div>
+        </div>
+      </section>
+
+      <section class="w-full bg-tx-dark">
+        <div class="container">
+          <div
+            class="text-[0.8rem] font-extralight text-white pt-5 lg:flex lg:justify-between lg:items-center lg:pb-5"
+          >
+            <div class="">
+              <p class="pb-2 md:pb-3">
+                21 Kodesho Street Ikeja, Lagos, Nigeria
+              </p>
+              <p class="pb-2 w-[35ch] lg:w-[55ch] md:pb-3">
+                Xorint Towers, 7 Okuru Road, Opp. Golf Estate, Off Peter Odilli
+                Road, Porthacourt, Nigeria
+              </p>
+            </div>
+            <div class="w-[25ch]">
+              <p class="pb-5">© 2023 Afrishipping. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- SWIPPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS LINKS -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

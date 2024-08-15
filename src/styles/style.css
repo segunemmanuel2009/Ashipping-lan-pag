@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-GrandLight.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-Tight.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-Narrow.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-WideLight.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-GrandLight.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url(../assets/fonts/Agrandir-GrandHeavy.otf);
+  font-weight: 600;
+  font-style: normal;
+  color: hsl(0, 0%, 10%);
+}
+
+/* SWIPPER CUSTOMIZE */
+.swiper-pagination-bullet {
+  background-color: #9abf3c;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.7rem !important;
+}
